@@ -19,7 +19,7 @@ class Bot():
         # Loading browser and navigate to the desired website
         
     def open_site(self):
-        self.driver.get("")
+        self.driver.get("http://www.abc.xyz/")
 
         time.sleep(1)
 
