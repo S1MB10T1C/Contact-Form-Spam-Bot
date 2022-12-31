@@ -15,23 +15,23 @@ print(generate_message())
 class Bot():
     def __init__(self):
         # Load chromedriver
-        self.driver = webdriver.Chrome("C:/chromedriver")
+        self.driver = webdriver.Chrome()
         # Loading browser and navigate to the desired website
         
     def open_site(self):
-        self.driver.get('https://transteven.com/')
+        self.driver.get("")
 
         time.sleep(1)
 
-        cont = self.driver.find_element("xpath", "/html/body/div/header/div/div/div/div[2]/ul/a[3]")
+        cont = self.driver.find_element("xpath", "/full-xpath")
         cont.click()
         time.sleep(.6)
 
     # Insert Stinger
     def inject_venom(self):
-        name_field = self.driver.find_element("xpath", "/html/body/div/div/div/div/div/form/input[2]")
-        email_field = self.driver.find_element("xpath", "/html/body/div/div/div/div/div/form/input[3]")
-        msg_field = self.driver.find_element("xpath", "/html/body/div/div/div/div/div/form/textarea")
+        name_field = self.driver.find_element("xpath", "/full-xpath")
+        email_field = self.driver.find_element("xpath", "/full-xpath")
+        msg_field = self.driver.find_element("xpath", "/full-xpath")
     # Inject Venom
     
         with open("usernames.txt", "r") as f:
@@ -88,11 +88,11 @@ class Bot():
         msg_field.send_keys(generate_message())
         time.sleep(0.25)
     # Submit
-        send_button = self.driver.find_element("xpath", "/html/body/div/div/div/div/div/form/p/button")
+        send_button = self.driver.find_element("xpath", "/full-xpath")
         send_button.click()
         time.sleep(0.25)
-    # # Back to original site
-    #     back_button = self.driver.find_element("xpath", "/html/body/div/div/div[2]/p[2]/a")
+    # # Back to original site (Useful if site ):
+    #     back_button = self.driver.find_element("xpath", "/full-xpath")
     #     back_button.click()
         
 for i in range(1000):
