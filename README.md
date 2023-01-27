@@ -31,7 +31,7 @@ for handle in window_handles:
 driver.switch_to.window(new_window_handle)
 ##
 ### ⚠ USE AT YOUR OWN RISK. 
-### ⚠ IT IS NOT RECOMMENDED TO USE THIS ON OTHERS WITHOUT THEIR PERMISSION. 
+### ⚠ IT IS NOT RECOMMENDED TO USE THIS ON WEBSITES YOU ARE NOT THE OWNER OF. 
 ### ⚠ YOU ARE RESPONSIBLE FOR YOUR OWN ACTIONS WHEN USING THIS program.
 
 # How to use:
