@@ -91,7 +91,7 @@ class Bot():
         send_button = self.driver.find_element("xpath", "/full-xpath")
         send_button.click()
         time.sleep(0.25)
-    # # Back to original site (Useful if site ):
+    # # Back to original site (Useful if site doesn't return you to the original forum start point after completion):
     #     back_button = self.driver.find_element("xpath", "/full-xpath")
     #     back_button.click()
         
